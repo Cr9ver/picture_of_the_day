@@ -1,8 +1,9 @@
 import streamlit as st
 import requests
 import backend
+import os
 
-api_key = "CscYDTjoeXbrLitfbbk9joUTw1hLmLmnLHlKacFy"
+api_key = os.getenv('API_KEY')
 url = "https://api.nasa.gov/planetary/apod?" \
       f"api_key={api_key}"
 
